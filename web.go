@@ -15,7 +15,7 @@ func main() {
   }
 
   m.Get("/", func() string {
-    return "v1: " + interfaces[1].HardwareAddr.String()
+    return "v1: " + interfaces[1].HardwareAddr.String() + "\n"
   })
 
   m.Run()
